@@ -1,0 +1,53 @@
+:root {
+    /* COLORS */
+    --background: hsl(185, 75%, 39%);
+    --background-card: #fff; 
+
+    --text-h2: hsl(229, 23%, 23%);
+    --text-p:hsl(227, 10%, 46%);
+    --text-span: hsl(227, 10%, 46%);
+
+    --border: hsl(0, 0%, 59%);
+
+    /* FONTS */
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--background);
+}
+
+.card {
+    max-width: 400px;
+    margin-bottom: 25px;
+}
+
+.bg-pattern-top, .bg-pattern-bottom {
+    height: 500px;
+    z-index: -2;
+}
+
+.bg-pattern-top {
+    position: fixed;
+    top: -225px;
+    left: -250px;
+}
+
+.bg-pattern-bottom {
+    position: fixed;
+    bottom: -225px;
+    right: -250px;
+}

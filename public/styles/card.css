@@ -1,0 +1,84 @@
+/*
+    CARD - CONTAINER
+*/
+.card {
+    background-color: var(--background-card);
+    border-radius: 12px;
+}
+
+.card__img {
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+}
+
+/*
+    PROFILE
+*/
+.card__profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.card__profile__img {
+    border-radius: 50%;
+    border: 5px solid #fff;
+
+    position: absolute;
+    top: -60px;
+}
+
+.card__profile > h2 {
+    margin: 70px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-h2);
+}
+
+.card__profile > h2 > span {
+    font-size: 1rem;
+    font-weight: normal;
+    color: var(--text-span);
+}
+
+.card__profile > p {
+    margin-bottom: 30px;
+    font-size: 0.8rem;
+    color: var(--text-p);
+}
+
+/*
+    INFO
+*/
+.card__info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 25px 10px;
+}
+
+.card__info__column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__info__column > h2 {
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--text-h2);
+    margin-bottom: 5px;
+}
+
+.card__info__column > span {
+    color: var(--text-span);
+    font-size: 0.5rem;
+    letter-spacing: 0.1rem;
+}

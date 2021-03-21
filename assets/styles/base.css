@@ -28,26 +28,12 @@ body {
     align-items: center;
 
     background-color: var(--background);
+    background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg"); 
+    background-repeat: no-repeat; 
+    background-position: calc(100% - 50vw) calc(100% - 50vh), calc(0% + 50vw) calc(0% + 50vh);
 }
 
 .card {
     max-width: 400px;
     margin-bottom: 25px;
-}
-
-.bg-pattern-top, .bg-pattern-bottom {
-    height: 500px;
-    z-index: -2;
-}
-
-.bg-pattern-top {
-    position: fixed;
-    top: -225px;
-    left: -250px;
-}
-
-.bg-pattern-bottom {
-    position: fixed;
-    bottom: -225px;
-    right: -250px;
 }
